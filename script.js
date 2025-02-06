@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('fNameError').innerHTML ='&nbsp; 2 characters required';
             isValid = false;
         } else {
-            document.getElementById('fNameError').innerHTML ='';
+            document.getElementById('fNameError').innerHTML ='&nbsp;';
         }
 
         const lName = document.getElementById("lastName").value.trim();
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('lNameError').innerHTML ='&nbsp; 2 characters required';
             isValid = false;
         } else {
-            document.getElementById('lNameError').innerHTML ='';
+            document.getElementById('lNameError').innerHTML ='&nbsp;';
         }
 
         const email = document.getElementById("email").value.trim();
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('emailError').innerHTML ='&nbsp; email required';            
             isValid = false;
         } else {
-            document.getElementById('emailError').innerHTML ='';
+            document.getElementById('emailError').innerHTML ='&nbsp;';
         }
 
         const pass = document.getElementById("pass").value.trim();
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('passError').innerHTML ='&nbsp; At least one number and uppercase character required';
             isValid = false;
         } else {
-            document.getElementById('passError').innerHTML ='';
+            document.getElementById('passError').innerHTML ='&nbsp;';
         }
         
         const cpass = document.getElementById('cpass').value.trim();
@@ -45,14 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('cpassError').innerHTML ='&nbsp; Confirmation does not match password';
             isValid = false;
         }else {
-            document.getElementById('cpassError').innerHTML ='';
+            document.getElementById('cpassError').innerHTML ='&nbsp;';
         }
         const age = document.getElementById("age").value.trim();
         if (age != '' && (age < 18 || age > 100)){
             document.getElementById("ageError").innerHTML = "&nbsp; If included, age must be 18-100";
             isValid=false;
         } else {
-            document.getElementById('ageError').innerHTML = '';
+            document.getElementById('ageError').innerHTML = '&nbsp;';
         }
 
         const phone = document.getElementById("phone").value.trim();
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('phoneError').innerHTML ='&nbsp; If included, phone number must be correct format: XXX-XXX-XXXX';
             isValid = false;
         } else {
-            document.getElementById('phoneError').innerHTML ='';
+            document.getElementById('phoneError').innerHTML ='&nbsp;';
         }
 
         if(isValid){
