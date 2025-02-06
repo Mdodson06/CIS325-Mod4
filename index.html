@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <p id="header">Image Display</p>
+        <form id="RForm" action="/submit-form" method="POST">
+            <div class="question">
+                <label for="firstName">First Name: </label>
+                <input type="text" id="firstName" name="firstName"> 
+                <small id="fNameError" style="color: red;"></small>
+            </div>
+
+            <div class="question">
+            <label for="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="lastName"> 
+            <small id="lNameError" style="color: red;"></small>
+            </div>
+
+            <div class="question">
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="user@email.com" > 
+            <small id="emailError" style="color: red;"></small>
+            </div>
+
+            <div class="question">
+            <label for="pass">Password: </label>
+            <input type="password" id="pass" name="pass">
+            <small id="passError" style="color: red;"></small>
+            </div>
+
+            <div class="question">
+            <label for="cpass">Confirm Password: </label>
+            <input type="password" id="cpass" name="cpass"> 
+            <small id="cpassError" style="color: red;"></small>
+            </div>
+
+            <div class="question">
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age">
+            <small id="ageError" style="color: red;"></small>
+            </div>
+
+            <div class="question">
+            <label for="phone">Phone number: </label>
+            <input type="tel" placeholder="555-555-5555" id="phone" name="phone">
+            <small id="phoneError" style="color: red;"></small>
+            </div>
+
+            <button type="submit">Submit</button>          
+        </form>
+        <p id="footer">Insert copyright info here</p>
+
+    </body>
+</html>
